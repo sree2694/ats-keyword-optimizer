@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>ATS Keyword Optimizer</title>
+</head>
+<body>
+<h2>ATS Resume Keyword Analyzer</h2>
+<form action="/analyze" method="post">
+    <label>Job Description:</label><br>
+    <textarea name="jobDescription" rows="6" cols="60"></textarea><br><br>
+    <label>Resume Text:</label><br>
+    <textarea name="resumeText" rows="6" cols="60"></textarea><br><br>
+    <button type="submit">Analyze</button>
+</form>
+</body>
+</html>

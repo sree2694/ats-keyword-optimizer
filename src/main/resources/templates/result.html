@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Analysis Result</title>
+</head>
+<body>
+<h2>Keyword Analysis Result</h2>
+
+<h3>Matched Keywords:</h3>
+<ul>
+    <li th:each="keyword : ${matched}" th:text="${keyword}"></li>
+</ul>
+
+<h3>Missing Keywords (Consider Adding):</h3>
+<ul>
+    <li th:each="keyword : ${missing}" th:text="${keyword}"></li>
+</ul>
+
+<a href="/">Analyze Again</a>
+</body>
+</html>
